@@ -29,3 +29,17 @@ LOCAL_CFLAGS := -Wall -Werror
 LOCAL_32_BIT_ONLY := true
 
 include $(BUILD_EXECUTABLE)
+
+include $(CLEAR_VARS)
+
+LOCAL_SRC_FILES := get_snd_dev_names.c
+
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE := get_snd_dev_names
+LOCAL_MODULE_CLASS := EXECUTABLES
+
+LOCAL_CFLAGS := -Wall -Werror
+
+LOCAL_32_BIT_ONLY := true
+
+include $(BUILD_EXECUTABLE)
