@@ -18,10 +18,10 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_SRC_FILES := acdb_get.c
+LOCAL_SRC_FILES := acdb_extract.c
 
 LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE := acdb_get
+LOCAL_MODULE := acdb_extract
 LOCAL_MODULE_CLASS := EXECUTABLES
 
 LOCAL_CFLAGS := -Wall -Werror
