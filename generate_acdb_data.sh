@@ -22,7 +22,7 @@ echo "};" >> acdb_data.h
 echo >> acdb_data.h
 
 echo "static char * faux_device_table[SND_DEVICE_MAX] = {" >> acdb_data.h
-echo "    [SND_DEVICE_NONE] = \"none\"," >> acdb_data.h
+echo "    [SND_DEVICE_NONE] = \"SND_DEVICE_NONE\"," >> acdb_data.h
 for device in $devices; do
     echo "    [$device] = \"$device\"," >> acdb_data.h
 done
