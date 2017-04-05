@@ -31,7 +31,7 @@ int main(int argc, char** argv) {
 	printf("static char * device_table[SND_DEVICE_MAX] = {\n");
 	int dev;
 	for (dev = 0; dev < SND_DEVICE_MAX; dev++)
-		printf("\t[%s] = \"%s\",\n", device_table[dev], platform_get_snd_device_name(dev));
+		printf("\t[%s] = \"%s\",\n", faux_device_table[dev], platform_get_snd_device_name(dev));
 	printf("};\n");
 
 	dlclose(handle);

@@ -75,7 +75,7 @@ int main(int argc, char** argv) {
 		/* print the table */
 		printf("\t<acdb_ids>\n");
 		for (i = 1; i < SND_DEVICE_MAX; i++)
-			printf("\t\t<device name=\"%s\" acdb_id=\"%i\"/>\n", device_table[i], acdb_device_table[i]);
+			printf("\t\t<device name=\"%s\" acdb_id=\"%i\"/>\n", faux_device_table[i], acdb_device_table[i]);
 		printf("\t</acdb_ids>\n");
 
 next:
